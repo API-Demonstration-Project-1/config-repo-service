@@ -1,0 +1,21 @@
+server:
+  port: 8888
+       
+spring:
+#  profiles:
+#    active: native
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/API-Demonstration-Project-1/config-repo/
+          searchPaths: user-management-service
+          username: PrvSunKS
+          password: Prv07sun
+          
+#        native:
+#          searchLocations: file:///Users/johncarnell1/book/native_cloud_apps/ch4-config-managment/confsvr/src/main/resources/config/usermanagement-service
