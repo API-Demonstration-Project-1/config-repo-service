@@ -9,7 +9,7 @@
 		<version>1.4.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.toystore.ecomm</groupId>
+	<groupId>com.toystore.ecomm.config</groupId>
 	<artifactId>config-repo-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>config-repo-service</name>
@@ -21,7 +21,7 @@
 		<java.version>1.8</java.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<start-class>com.toystore.ecomm.ConfigServerApplication</start-class>
+		<start-class>com.toystore.ecomm.config.ConfigServerApplication</start-class>
 	</properties>
 
 	<dependencyManagement>
