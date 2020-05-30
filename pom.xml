@@ -22,6 +22,8 @@
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.toystore.ecomm.config.ConfigServerApplication</start-class>
+		<docker.image.name>proarchs/config-repo-service</docker.image.name>
+        <docker.image.tag>confsvr-v1.0.0</docker.image.tag>
 	</properties>
 
 	<dependencyManagement>
@@ -113,7 +115,24 @@
 				</goals> <phase>package</phase> <configuration> <path>/</path> <enableNaming>false</enableNaming> 
 				<finalName>webapp.jar</finalName> <charset>utf-8</charset> </configuration> 
 				</execution> </executions> </plugin> -->
-		</plugins>
+		
+		<plugin>
+			<groupId>com.spotify</groupId>
+			<artifactId>docker-maven-plugin</artifactId>
+			<version>0.4.10</version>
+			<configuration>
+				<imageName>${docker.image.name}:[ca]${docker.image.tag}</imageName>
+				<dockerDirectory>${basedir}/target/dockerfile</dockerDirectory>
+				<resources>
+					<resource>
+					<targetPath>/</targetPath>
+					<directory>${project.build.directory}</directory>
+					<include>${project.build.finalName}.jar</include>
+					</resource>
+				</resources>
+			</configuration>
+		</plugin>
+</plugins>
 	</build>
 
 </project>
