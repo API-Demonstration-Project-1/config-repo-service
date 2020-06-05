@@ -1,5 +1,10 @@
 server:
-  port: 8888
+  port: 443
+  ssl:
+     key-store: proarchswebservicescertificatespkcs12.jks
+     key-store-password: proarchs
+     keyStoreType: PKCS12
+     keyAlias: proarchswebservices
        
 spring:
 #  profiles:
