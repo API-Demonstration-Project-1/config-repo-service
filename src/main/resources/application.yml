@@ -1,10 +1,10 @@
 server:
   port: 8888
-  ssl:
-     key-store: proarchswebservicescertificatespkcs12.jks
-     key-store-password: proarchs
-     keyStoreType: PKCS12
-     keyAlias: proarchswebservices
+#  ssl:
+#     key-store: proarchswebservicescertificatespkcs12.jks
+#     key-store-password: proarchs
+#     keyStoreType: PKCS12
+#     keyAlias: proarchswebservices
        
 spring:
 #  profiles:
@@ -18,7 +18,7 @@ spring:
         encrypt.enabled: false
         git:
           uri: "{cipher}9c75c57d1922085ed6597ac4c57a048aca82b4245c3d351ba9ce51091b5719b45c9609290cb9b9c6edd0b0b157b8e9f132b3dbb184a223955f1e437abe8ad2b83d7c8da189ae926e1d54aadf3d6aecbc"
-          searchPaths: user-management-service
+          searchPaths: user-management-service,tenant-management-service
           username: "{cipher}8176ac45c1cdd784e31f40e3231efcb584ddd3603de482a88a7b0535a8dafdf5"
           password: "{cipher}cf2838b8d5f02318e305cfcbfe7fc086cb61cf7a323f3990fb05f9f2bfa37b79"
           
