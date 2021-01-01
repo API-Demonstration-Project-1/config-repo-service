@@ -10,7 +10,13 @@ TO RUN THE PROGRAM:
 
 example : {ENCRYPT_KEY}
 
-![screebshot](https://github.com/API-Demonstration-Project-1/config-repo-service/blob/master/program_argument.png)
+adding variable:
+
+![variable](https://github.com/API-Demonstration-Project-1/config-repo-service/blob/master/env_variable_in_eclipse.jpg)
+
+passing the variable as an argument:
+
+![argument](https://github.com/API-Demonstration-Project-1/config-repo-service/blob/master/program_argument.png)
 
 ## In Console
 
