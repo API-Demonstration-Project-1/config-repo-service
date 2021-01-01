@@ -27,4 +27,5 @@ spring:
           password: "{cipher}cf2838b8d5f02318e305cfcbfe7fc086cb61cf7a323f3990fb05f9f2bfa37b79"
           
 #        native:
-#          searchLocations: file:///Users/johncarnell1/book/native_cloud_apps/ch4-config-managment/confsvr/src/main/resources/config/usermanagement-service
+#          searchLocations: file:///Users/johncarnell1/book/native_cloud_apps/ch4-config-managment/confsvr/src/main/resources/config/usermanagement-service 
+# TO-DO
