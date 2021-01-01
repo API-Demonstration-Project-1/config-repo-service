@@ -10,6 +10,8 @@ TO RUN THE PROGRAM:
 
 example : {ENCRYPT_KEY}
 
+![screebshot](https://github.com/API-Demonstration-Project-1/config-repo-service/blob/master/program_argument.png)
+
 ## In Console
 
 java -jar config-repo-service.jar XYZENCRYPTIONKEY
