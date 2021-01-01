@@ -1,6 +1,7 @@
 # config-repo-service
 configuration details for all APIs
 
+
 TO RUN THE PROGRAM:
 
 ## In ECLIPSE
@@ -21,3 +22,19 @@ passing the variable as an argument:
 ## In Console
 
 java -jar config-repo-service.jar XYZENCRYPTIONKEY
+
+----------------------------------------------------------------
+
+
+## What is ready?
+
+  - a working spring boot app
+  - dockerized
+  - properties encrypted
+  - secured using SSL with HTTPS
+
+## Pending:
+
+- authentication 
+- mavenizing docker image creation
+- CI/CD
